@@ -1,0 +1,1805 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header{
+    width: 100vw;
+    max-width: 100%;
+    background-color: transparent;
+    height: 15vh;
+    padding: 1vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 11;
+}
+
+header .black{
+    display: none;
+}
+
+/* Banner Section Start */
+.bannerContainer{
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_headings{
+    width: 70%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner_headings .head1{
+    padding: 0.5vmax;
+    font: 300 3.5vmax 'chronicle';
+    font-style: italic;
+    color: #c9a485;
+}
+.banner_headings .head2{
+    padding: 0.5vmax;
+    font: 300 3.5vmax sans-serif;
+    color: white;
+}
+.banner_headings .head3{
+    padding: 0.5vmax;
+    font: 300 3.5vmax sans-serif;
+    color: white;
+}
+
+/* Inventory Section */
+.inventoryContainer{
+    width: 100vw;
+    max-width: 100%;
+    padding: 1vmax;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+.inventoryContainer .inventoryBox{
+    width: 90%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory_heading h1{
+    font: 600 2vmax sans-serif;
+    padding: 2vmax;
+    word-spacing: -0.3vmax;
+    color: #c9a485;
+}
+
+.inventoryContainer .inventoryBox .inventory-card{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card{
+    width: 400px;
+    height: 140px;
+    background-color: white;
+    border: 3px solid #c9a485;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardIcon{
+    position: absolute;
+    transform: translateY(-5vmax);
+    background-color: white;
+    padding: 1vmax 3vmax;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardIcon i{
+    color: #c9a485;
+    font-size: 6vmax;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardPara{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardPara p{
+    font: 300 1.3vmax sans-serif;
+    text-align: center;
+    padding: 2vmax;
+}
+
+/* InventoryDetails Section */
+.inventoryDetails{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    padding: 2vmax;
+}
+
+.inventoryDetails .detailCards{
+    width: 88%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inventoryDetails .detailCards .dCard{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.4vmax;
+}
+
+.inventoryDetails .detailCards .dCard .dicon{
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.5vmax;
+}
+
+.inventoryDetails .detailCards .dCard .dicon i{
+  font-size: 3vmax;
+  color: #c9a485;
+}
+
+.inventoryDetails .detailCards .dCard .dPara{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inventoryDetails .detailCards .dCard .dPara p{
+   font: 300 0.9vmax sans-serif;
+   padding: 0.5vmax;
+}
+
+/* New Section */
+.newContainer{
+    padding: 5vmax;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+}
+
+.newContainer .newHeading h1{
+   font: 300 3.2vmax sans-serif;
+   padding: 1vmax;
+   color: #c9a485;
+}
+
+.newContainer .newCards{
+    width: 90%;
+}
+
+.newContainer .newCards .newBox{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newContainer .newCards .newBox .nCard{
+   width: 600px;
+   height: 400px;
+   background-color: aqua;
+   margin: 2.4vmax;
+}
+
+.newContainer .newCards .newBox .nCard img{
+   width: 600px;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails{
+   position: absolute;
+   transform: translateY(-10vmax);
+   width: 600px;
+   padding: 1vmax;
+   transition: all 5s;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails .nHeading{
+  color: white;
+  font: 600 3vmax sans-serif;
+  padding: 1vmax;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails .para{
+  color: white;
+  font: 300 1.3vmax sans-serif;
+  line-height: 2vmax;
+  padding: 1vmax;
+  display: none;
+  word-spacing: 0.3vmax;
+  text-align: justify;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails:hover{
+    transform: translateY(-15vmax);
+}
+
+.newContainer .newCards .newBox .nCard .newDetails:hover .para{
+    display: flex;
+}
+
+/* Welcome Section */
+.welcomeContainer{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.welcomeContainer section{
+    width: 50%;
+}
+
+.welcomeContainer .welDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcomeContainer .welDetails .welHead1{
+    font: 300 3vmax sans-serif;
+    color: #c9a485;
+    padding: 0.3vmax;
+}
+
+.welcomeContainer .welDetails p{
+    width: 85%;
+    padding: 1vmax;
+    text-align: center;
+    font: 300 1.1vmax sans-serif;
+    line-height: 2vmax;
+    word-spacing: 0.2vmax;
+}
+
+.welcomeContainer .welVideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeContainer .welVideo video{
+    width: 700px;
+}
+
+/* inventoryFAQ Section */
+.inventoryFAQ{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(https://www.sobharealty.com/images/why-soba-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryFAQ .faqContainer{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.inventoryFAQ .faqContainer .faqHeading{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventoryFAQ .faqContainer .faqHeading h1{
+   font: 300 3.5vmax sans-serif;
+   padding: 1vmax;
+   color: white;
+}
+
+.inventoryFAQ .faqContainer .faqCards{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard{
+    width: 350px;
+    margin: 1vmax;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fimg{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmax;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fimg i{
+   font-size: 2vmax;
+   color: #c9a485;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fpara{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1vmax;
+    color: white;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fpara h4{
+    font: 600 1.3vmax sans-serif;
+}
+
+/* Contact Section */
+.contactContainer{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.contactContainer .contactForm{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactContainer .contactForm div{
+    width: 50%;
+}
+
+.contactContainer .contactForm .formHeading{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contactContainer .contactForm .formHeading h1{
+   font: 300 3vmax sans-serif;
+   padding: 0.4vmax;
+}
+
+.contactContainer .contactForm .formContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contactContainer .contactForm .formContainer .input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactContainer .contactForm .formContainer input[type="text"]{
+    padding: 1vmax;
+    width: 300px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer input[type="email"]{
+    padding: 1vmax;
+    width: 410px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer input[type="number"]{
+    padding: 1vmax;
+    width: 300px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer select{
+    padding: 1vmax;
+    padding-right: 4.5vmax;
+    width: 650px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer .formMode{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .formMode .modeContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .formCheckBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .checkContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0.5vmax;
+    padding-left: 0;
+}
+
+.buttonContainer button{
+    width: 50%;
+padding: 1vmax;
+outline: none;
+border: 0;
+font-size: 1vmax;
+background: black;
+color: white;
+}
+
+.buttonContainer button i{
+padding: 1vmax;
+font-size: 1vmax;
+}
+
+.buttonContainer button:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* footer Section */
+.footer{
+    height: 30vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footpara{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .footpara p{
+    font: 300 1vmax snas-serif;
+    padding: 1vmax;
+}
+
+.footer .footicon{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Special Icon Secction */
+.specialContainer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    padding: 0.5vmax;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specialContainer div:nth-child(1){
+    border-right: 2px solid black;
+}
+
+.specialContainer div:nth-child(2){
+    border-right: 2px solid black;
+}
+
+.specialContainer div:nth-child(3){
+    border-right: 2px solid black;
+}
+
+.specialContainer .specialCards{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialContainer .specialCards i{
+    font-size: 1.3vmax;
+    padding: 0.3vmax;
+}
+.specialContainer .specialCards h5{
+    font: 300 1vmax sans-serif;
+    padding: 0.3vmax;
+}
+
+
+@media screen and (max-width: 1000px) {
+    /* Header Section */
+header{
+    width: 100vw;
+    max-width: 100%;
+    background-color: transparent;
+    height: 10vh;
+    padding: 1vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 11;
+}
+
+header .black{
+    display: none;
+}
+
+/* Banner Section Start */
+.bannerContainer{
+    width: 100vw;
+    max-width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_headings{
+    width: 70%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner_headings .head1{
+    padding: 0.5vmax;
+    font: 300 3.5vmax 'chronicle';
+    font-style: italic;
+    color: #c9a485;
+}
+.banner_headings .head2{
+    padding: 0.5vmax;
+    font: 300 3.5vmax sans-serif;
+    color: white;
+}
+.banner_headings .head3{
+    padding: 0.5vmax;
+    font: 300 3.5vmax sans-serif;
+    color: white;
+}
+
+/* Inventory Section */
+.inventoryContainer{
+    width: 100vw;
+    max-width: 100%;
+    padding: 1vmax;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+
+.inventoryContainer .inventoryBox{
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory_heading h1{
+    font: 600 2vmax sans-serif;
+    padding: 2vmax;
+    word-spacing: -0.3vmax;
+    color: #c9a485;
+}
+
+.inventoryContainer .inventoryBox .inventory-card{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    border: 3px solid #c9a485;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardIcon{
+    position: absolute;
+    transform: translateY(-5vmax);
+    background-color: white;
+    padding: 1vmax 3vmax;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardIcon i{
+    color: #c9a485;
+    font-size: 6vmax;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardPara{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardPara p{
+    font: 300 1.3vmax sans-serif;
+    text-align: center;
+    padding: 2vmax;
+}
+
+/* InventoryDetails Section */
+.inventoryDetails{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    padding: 2vmax;
+}
+
+.inventoryDetails .detailCards{
+    width: 88%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inventoryDetails .detailCards .dCard{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.4vmax;
+}
+
+.inventoryDetails .detailCards .dCard .dicon{
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.5vmax;
+}
+
+.inventoryDetails .detailCards .dCard .dicon i{
+  font-size: 3vmax;
+  color: #c9a485;
+}
+
+.inventoryDetails .detailCards .dCard .dPara{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inventoryDetails .detailCards .dCard .dPara p{
+   font: 300 1vmax sans-serif;
+   padding: 0.5vmax;
+}
+
+/* New Section */
+.newContainer{
+    padding: 5vmax;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+}
+
+.newContainer .newHeading h1{
+   font: 300 3.2vmax sans-serif;
+   padding: 1vmax;
+   color: #c9a485;
+}
+
+.newContainer .newCards{
+    width: 60%;
+}
+
+.newContainer .newCards .newBox{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.newContainer .newCards .newBox .nCard{
+   width: 600px;
+   height: 400px;
+   background-color: aqua;
+   margin: 2.4vmax;
+}
+
+.newContainer .newCards .newBox .nCard img{
+   width: 600px;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails{
+   position: absolute;
+   transform: translateY(-10vmax);
+   width: 600px;
+   padding: 1vmax;
+   transition: all 5s;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails .nHeading{
+  color: white;
+  font: 600 3vmax sans-serif;
+  padding: 1vmax;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails .para{
+  color: white;
+  font: 300 1.3vmax sans-serif;
+  line-height: 2vmax;
+  padding: 1vmax;
+  display: none;
+  word-spacing: 0.3vmax;
+  text-align: justify;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails:hover{
+    transform: translateY(-15vmax);
+}
+
+.newContainer .newCards .newBox .nCard .newDetails:hover .para{
+    display: flex;
+}
+
+/* Welcome Section */
+.welcomeContainer{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.welcomeContainer section{
+    width: 100%;
+}
+
+.welcomeContainer .welDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcomeContainer .welDetails .welHead1{
+    font: 300 3vmax sans-serif;
+    color: #c9a485;
+    padding: 0.3vmax;
+}
+
+.welcomeContainer .welDetails p{
+    width: 65%;
+    padding: 1vmax;
+    text-align: center;
+    font: 300 1.1vmax sans-serif;
+    line-height: 2vmax;
+    word-spacing: 0.2vmax;
+}
+
+.welcomeContainer .welVideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeContainer .welVideo video{
+    width: 500px;
+}
+
+/* inventoryFAQ Section */
+.inventoryFAQ{
+    width: 100vw;
+    height: 60vh;
+    max-width: 100%;
+    background-image: url(https://www.sobharealty.com/images/why-soba-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryFAQ .faqContainer{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.inventoryFAQ .faqContainer .faqHeading{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventoryFAQ .faqContainer .faqHeading h1{
+   font: 300 3.5vmax sans-serif;
+   padding: 1vmax;
+   color: white;
+}
+
+.inventoryFAQ .faqContainer .faqCards{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard{
+    width: 350px;
+    margin: 1vmax;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fimg{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmax;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fimg i{
+   font-size: 2vmax;
+   color: #c9a485;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fpara{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1vmax;
+    color: white;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fpara h4{
+    font: 600 1.3vmax sans-serif;
+}
+
+/* Contact Section */
+.contactContainer{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contactContainer .contactForm{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactContainer .contactForm div{
+    width: 100%;
+}
+
+.contactContainer .contactForm .formHeading{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactContainer .contactForm .formHeading h1{
+   font: 300 3vmax sans-serif;
+   padding: 0.4vmax;
+}
+
+.contactContainer .contactForm .formContainer{
+    width: 60%;
+    height: 100vh;
+    padding: 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contactContainer .contactForm .formContainer .input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactContainer .contactForm .formContainer input[type="text"]{
+    padding: 1.4vmax;
+    width: 300px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer input[type="email"]{
+    padding: 1.4vmax;
+    width: 535px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer input[type="number"]{
+    padding: 1.3vmax;
+    width: 300px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer select{
+    padding: 1.3vmax;
+    padding-right: 4.5vmax;
+    width: 650px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer .formMode{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .formMode .modeContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .formCheckBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .checkContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5vmax;
+    padding-left: 0;
+}
+
+.buttonContainer button{
+    width: 100%;
+padding: 1vmax;
+outline: none;
+border: 0;
+font-size: 1vmax;
+background: black;
+color: white;
+}
+
+.buttonContainer button i{
+padding: 1vmax;
+font-size: 1.5vmax;
+}
+
+.buttonContainer button:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* footer Section */
+.footer{
+    height: 15vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footpara{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .footpara p{
+    font: 300 1vmax snas-serif;
+    padding: 1vmax;
+}
+
+.footer .footicon{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Special Icon Secction */
+.specialContainer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    padding: 0.5vmax;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specialContainer div:nth-child(1){
+    border-right: 2px solid black;
+}
+
+.specialContainer div:nth-child(2){
+    border-right: 2px solid black;
+}
+
+.specialContainer div:nth-child(3){
+    border-right: 2px solid black;
+}
+
+.specialContainer .specialCards{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialContainer .specialCards i{
+    font-size: 1.3vmax;
+    padding: 0.3vmax;
+}
+.specialContainer .specialCards h5{
+    font: 300 1vmax sans-serif;
+    padding: 0.3vmax;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+    /* Header Section */
+header{
+    width: 100vw;
+    max-width: 100%;
+    background-color: transparent;
+    height: 10vh;
+    padding: 2vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 11;
+}
+
+header .black{
+    display: none;
+}
+
+/* Banner Section Start */
+.bannerContainer{
+    width: 100vw;
+    max-width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_headings{
+    width: 70%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner_headings .head1{
+    padding: 0.5vmax;
+    font: 300 3.5vmax 'chronicle';
+    font-style: italic;
+    color: #c9a485;
+}
+.banner_headings .head2{
+    padding: 0.5vmax;
+    font: 300 3.5vmax sans-serif;
+    color: white;
+}
+.banner_headings .head3{
+    padding: 0.5vmax;
+    font: 300 3.5vmax sans-serif;
+    color: white;
+}
+
+/* Inventory Section */
+.inventoryContainer{
+    width: 100vw;
+    max-width: 100%;
+    padding: 1vmax;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.inventoryContainer .inventoryBox{
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory_heading h1{
+    font: 600 1.5vmax sans-serif;
+    padding: 2vmax;
+    word-spacing: -0.3vmax;
+    color: #c9a485;
+}
+
+.inventoryContainer .inventoryBox .inventory-card{
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    border: 3px solid #c9a485;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardIcon{
+    position: absolute;
+    transform: translateY(-5vmax);
+    background-color: white;
+    padding: 1vmax 3vmax;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardIcon i{
+    color: #c9a485;
+    font-size: 6vmax;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardPara{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryContainer .inventoryBox .inventory-card .card .cardPara p{
+    font: 300 1.3vmax sans-serif;
+    text-align: center;
+    padding: 2vmax;
+}
+
+/* InventoryDetails Section */
+.inventoryDetails{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140vh;
+    padding: 0.5vmax;
+}
+
+.inventoryDetails .detailCards{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inventoryDetails .detailCards .dCard{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.4vmax;
+}
+
+.inventoryDetails .detailCards .dCard .dicon{
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.5vmax;
+}
+
+.inventoryDetails .detailCards .dCard .dicon i{
+  font-size: 3vmax;
+  color: #c9a485;
+}
+
+.inventoryDetails .detailCards .dCard .dPara{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inventoryDetails .detailCards .dCard .dPara p{
+   font: 300 1.5vmax sans-serif;
+   padding: 0.5vmax;
+}
+
+/* New Section */
+.newContainer{
+    padding: 5vmax;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    background-color: white;
+    flex-direction: column;
+    display: none;
+}
+
+.newContainer .newHeading h1{
+   font: 300 3.2vmax sans-serif;
+   padding: 1vmax;
+   color: #c9a485;
+}
+
+.newContainer .newCards{
+    background-color: red;
+    width: 100%;
+    height: 300vh;
+}
+
+.newContainer .newCards .newBox{
+    width: 40%;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.newContainer .newCards .newBox .nCard{
+   width: 400px;
+   height: 350px;
+   background-color: aqua;
+   margin: 2.4vmax;
+}
+
+.newContainer .newCards .newBox .nCard img{
+   width: 150px;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails{
+   position: absolute;
+   transform: translateY(-10vmax);
+   width: 600px;
+   padding: 1vmax;
+   transition: all 5s;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails .nHeading{
+  color: white;
+  font: 600 3vmax sans-serif;
+  padding: 1vmax;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails .para{
+  color: white;
+  font: 300 1.3vmax sans-serif;
+  line-height: 2vmax;
+  padding: 1vmax;
+  display: none;
+  word-spacing: 0.3vmax;
+  text-align: justify;
+}
+
+.newContainer .newCards .newBox .nCard .newDetails:hover{
+    transform: translateY(-15vmax);
+}
+
+.newContainer .newCards .newBox .nCard .newDetails:hover .para{
+    display: flex;
+}
+
+/* Welcome Section */
+.welcomeContainer{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.welcomeContainer section{
+    width: 100%;
+}
+
+.welcomeContainer .welDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcomeContainer .welDetails .welHead1{
+    font: 300 3vmax sans-serif;
+    color: #c9a485;
+    padding: 0.3vmax;
+}
+
+.welcomeContainer .welDetails p{
+    width: 65%;
+    padding: 1vmax;
+    text-align: center;
+    font: 300 1.1vmax sans-serif;
+    line-height: 2vmax;
+    word-spacing: 0.2vmax;
+}
+
+.welcomeContainer .welVideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeContainer .welVideo video{
+    width: 300px;
+}
+
+/* inventoryFAQ Section */
+.inventoryFAQ{
+    width: 100vw;
+    height: 130vh;
+    max-width: 100%;
+    background-image: url(https://www.sobharealty.com/images/why-soba-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryFAQ .faqContainer{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.inventoryFAQ .faqContainer .faqHeading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventoryFAQ .faqContainer .faqHeading h1{
+   font: 300 3vmax sans-serif;
+   padding: 1vmax;
+   color: white;
+}
+
+.inventoryFAQ .faqContainer .faqCards{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard{
+    width: 350px;
+    margin: 1vmax;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fimg{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmax;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fimg i{
+   font-size: 2.6vmax;
+   color: #c9a485;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fpara{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1vmax;
+    color: white;
+}
+
+.inventoryFAQ .faqContainer .faqCards .fCard .fpara h4{
+    font: 600 1.7vmax sans-serif;
+}
+
+/* Contact Section */
+.contactContainer{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.contactContainer .contactHeading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactContainer .contactForm{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactContainer .contactForm div{
+    width: 100%;
+}
+
+.contactContainer .contactForm .formHeading{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactContainer .contactForm .formHeading h1{
+   font: 300 3vmax sans-serif;
+   padding: 0.4vmax;
+}
+
+.contactContainer .contactForm .formContainer{
+    width: 80%;
+    height: 100vh;
+    padding: 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contactContainer .contactForm .formContainer .input{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactContainer .contactForm .formContainer input[type="text"]{
+    padding: 1.4vmax;
+    width: 300px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer input[type="email"]{
+    padding: 1.4vmax;
+    width: 293px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer input[type="number"]{
+    padding: 1.3vmax;
+    width: 300px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer select{
+    padding: 1.3vmax;
+    padding-right: 4.5vmax;
+    width: 650px;
+    margin-right: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.contactContainer .contactForm .formContainer .formMode{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .formMode .modeContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .formCheckBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1vmax;
+    padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .checkContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5vmax;
+    padding-left: 0;
+}
+
+.buttonContainer button{
+    width: 100%;
+padding: 1vmax;
+outline: none;
+border: 0;
+font-size: 1vmax;
+background: black;
+color: white;
+}
+
+.buttonContainer button i{
+padding: 1vmax;
+font-size: 1.5vmax;
+}
+
+.buttonContainer button:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* footer Section */
+.footer{
+    height: 15vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footpara{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .footpara p{
+    font: 300 1vmax snas-serif;
+    padding: 1vmax;
+}
+
+.footer .footicon{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Special Icon Secction */
+.specialContainer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    padding: 0.5vmax;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specialContainer div:nth-child(1){
+    border-right: 2px solid black;
+}
+
+.specialContainer div:nth-child(2){
+    border-right: 2px solid black;
+}
+
+.specialContainer div:nth-child(3){
+    border-right: 2px solid black;
+}
+
+.specialContainer .specialCards{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialContainer .specialCards i{
+    font-size: 1.3vmax;
+    padding: 0.3vmax;
+}
+.specialContainer .specialCards h5{
+    font: 300 1vmax sans-serif;
+    padding: 0.3vmax;
+}
+}
+
+
+
+
+
+
