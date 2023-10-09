@@ -1771,7 +1771,7 @@ header .black {
         max-width: 100%;
         background-color: rgba(0, 0, 0, 0.3);
         padding: 3vmax;
-        padding-bottom: 6vmax;
+        padding-bottom: 8vmax;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1786,7 +1786,7 @@ header .black {
     }
 
     .footer .footpara p {
-        font: 300 2vmax snas-serif;
+        font: 300 1.8vmax snas-serif;
         padding: 2vmax;
     }
 
