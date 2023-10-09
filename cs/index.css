@@ -1598,9 +1598,9 @@ header .black{
     width: 100vw;
     max-width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    height: 110vh;
+    height: 120vh;
     flex-wrap: wrap;
     flex-direction: column;
 
@@ -1616,7 +1616,7 @@ header .black{
 .contactContainer .contactForm{
     display: flex;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -1627,20 +1627,22 @@ header .black{
 }
 
 .contactContainer .contactForm .formHeading{
-    width: 50%;
+    width: 100vw;
+    max-width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .contactContainer .contactForm .formHeading h1{
-   font: 300 3vmax sans-serif;
-   padding: 0.4vmax;
+   font: 600 2.5vmax sans-serif;
+   padding: 1vmax;
 }
 
 .contactContainer .contactForm .formContainer{
     width: 80%;
-    height: 100vh;
+    height: 90vh;
     padding: 2vmax;
     display: flex;
     flex-direction: column;
@@ -1655,41 +1657,48 @@ header .black{
 }
 
 .contactContainer .contactForm .formContainer input[type="text"]{
-    padding: 1.4vmax;
+    padding: 3vmax 5vmax;
     width: 300px;
-    margin-right: 1vmax;
-    margin-bottom: 0.5vmax;
+    margin-right: 0vmax;
+    margin-bottom: 2vmax;
+    font-size: 2vmax;
 }
 
 .contactContainer .contactForm .formContainer input[type="email"]{
-    padding: 1.4vmax;
-    width: 293px;
-    margin-right: 1vmax;
-    margin-bottom: 0.5vmax;
+    padding: 3vmax 5vmax;
+    width: 300px;
+    margin-right: 0vmax;
+    margin-bottom: 2vmax;
+    font-size: 2vmax;
 }
 
 .contactContainer .contactForm .formContainer input[type="number"]{
-    padding: 1.3vmax;
+    padding: 3vmax 5vmax;
     width: 300px;
-    margin-right: 1vmax;
-    margin-bottom: 0.5vmax;
+    margin-right: 0vmax;
+    margin-bottom: 2vmax;
+    font-size: 2vmax;
 }
 
 .contactContainer .contactForm .formContainer select{
-    padding: 1.3vmax;
+    padding: 3vmax 5vmax;
     padding-right: 4.5vmax;
     width: 650px;
-    margin-right: 1vmax;
-    margin-bottom: 0.5vmax;
+    margin-right: 0vmax;
+    margin-bottom: 2vmax;
 }
 
 .contactContainer .contactForm .formContainer .formMode{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 50%;
+    width: 100%;
     padding: 1vmax;
     padding-left: 0;
+}
+
+.contactContainer .contactForm .formContainer .formMode h4{
+    padding: 1vmax 0;
 }
 
 .contactContainer .contactForm .formContainer .formMode .modeContainer{
@@ -1717,19 +1726,23 @@ header .black{
     padding-left: 0;
 }
 
+.contactContainer .contactForm .formContainer .mode1{
+    padding: 1vmax;
+}
+
 .buttonContainer button{
     width: 100%;
 padding: 1vmax;
 outline: none;
 border: 0;
-font-size: 1vmax;
+font-size: 1.8vmax;
 background: black;
 color: white;
 }
 
 .buttonContainer button i{
 padding: 1vmax;
-font-size: 1.5vmax;
+font-size: 1.8vmax;
 }
 
 .buttonContainer button:hover{
