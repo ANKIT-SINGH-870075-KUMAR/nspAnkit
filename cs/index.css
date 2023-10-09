@@ -1272,7 +1272,7 @@ header .black{
 .inventoryContainer .inventoryBox .inventory_heading h1{
     font: 600 1.5vmax sans-serif;
     padding: 2vmax;
-    word-spacing: -0.3vmax;
+    word-spacing: 1vmax;
     color: #c9a485;
 }
 
