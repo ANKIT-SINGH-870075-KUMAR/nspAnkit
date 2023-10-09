@@ -1575,7 +1575,7 @@ header .black{
 }
 
 .inventoryFAQ .faqContainer .faqCards .fCard .fimg i{
-   font-size: 2.6vmax;
+   font-size: 4vmax;
    color: #c9a485;
 }
 
@@ -1589,7 +1589,8 @@ header .black{
 }
 
 .inventoryFAQ .faqContainer .faqCards .fCard .fpara h4{
-    font: 600 1.7vmax sans-serif;
+    font: 600 2vmax sans-serif;
+    word-spacing: 0.4vmax;
 }
 
 /* Contact Section */
