@@ -1269,8 +1269,18 @@ header .black{
     align-items: center;
 }
 
+.inventoryContainer .inventoryBox .inventory_heading{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .inventoryContainer .inventoryBox .inventory_heading h1{
-    font: 600 1.5vmax sans-serif;
+    text-align: center;
+    font: 600 2.2vmax sans-serif;
+    line-height: 3vmax;
     padding: 2vmax;
     word-spacing: 1vmax;
     color: #c9a485;
