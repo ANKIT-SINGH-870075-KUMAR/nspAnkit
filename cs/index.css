@@ -1288,7 +1288,7 @@ header .black{
 
 .inventoryContainer .inventoryBox .inventory-card{
     width: 100%;
-    height: 300vh;
+    height: 200vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1308,7 +1308,7 @@ header .black{
 
 .inventoryContainer .inventoryBox .inventory-card .card .cardIcon{
     position: absolute;
-    transform: translateY(-5vmax);
+    transform: translateY(-7vmax);
     background-color: white;
     padding: 1vmax 3vmax;
 }
@@ -1326,9 +1326,10 @@ header .black{
 }
 
 .inventoryContainer .inventoryBox .inventory-card .card .cardPara p{
-    font: 300 1.3vmax sans-serif;
+    font: 300 1.7vmax sans-serif;
     text-align: center;
     padding: 2vmax;
+    word-spacing: 0.3vmax;
 }
 
 /* InventoryDetails Section */
@@ -1338,7 +1339,7 @@ header .black{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 140vh;
+    height: 115vh;
     padding: 0.5vmax;
 }
 
@@ -1369,7 +1370,7 @@ header .black{
 }
 
 .inventoryDetails .detailCards .dCard .dicon i{
-  font-size: 3vmax;
+  font-size: 5vmax;
   color: #c9a485;
 }
 
@@ -1380,8 +1381,10 @@ header .black{
     align-items: center;
 }
 .inventoryDetails .detailCards .dCard .dPara p{
-   font: 300 1.5vmax sans-serif;
+   font: 300 1.9vmax sans-serif;
    padding: 0.5vmax;
+   line-height: 2.3vmax;
+   word-spacing: 0.4vmax;
 }
 
 /* New Section */
